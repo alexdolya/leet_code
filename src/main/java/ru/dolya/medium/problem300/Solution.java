@@ -1,4 +1,4 @@
-package ru.dolya.medium.problem_300;
+package ru.dolya.medium.problem300;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package ru.dolya.medium.problem_2870;
+package ru.dolya.medium.problem2870;
 
 import java.util.Arrays;
 import java.util.Map;

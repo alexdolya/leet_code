@@ -1,4 +1,4 @@
-package ru.dolya.easy.problem_1431;
+package ru.dolya.easy.problem1431;
 
 import java.util.ArrayList;
 import java.util.List;

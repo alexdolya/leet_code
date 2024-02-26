@@ -1,4 +1,4 @@
-package ru.dolya.easy.problem_9;
+package ru.dolya.easy.problem9;
 
 public class Solution {
     public static void main(String[] args) {

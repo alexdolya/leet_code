@@ -1,4 +1,4 @@
-package ru.dolya.easy.problem_1;
+package ru.dolya.easy.problem1;
 
 import java.util.Arrays;
 

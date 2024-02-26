@@ -1,4 +1,4 @@
-package ru.dolya.medium.problem_2610;
+package ru.dolya.medium.problem2610;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package ru.dolya.easy.problem_13;
+package ru.dolya.easy.problem13;
 
 /**
  * Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.

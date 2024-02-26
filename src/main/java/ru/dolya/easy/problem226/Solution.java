@@ -1,4 +1,4 @@
-package ru.dolya.easy.problem_226;
+package ru.dolya.easy.problem226;
 
 
 class Solution {
