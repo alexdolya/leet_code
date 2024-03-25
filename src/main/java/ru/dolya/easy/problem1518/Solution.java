@@ -7,7 +7,6 @@ class Solution {
         Solution solution = new Solution();
         System.out.println(solution.numWaterBottles(9, 3));
         System.out.println(solution.numWaterBottles(15, 4));
-
     }
 
     public int numWaterBottles(int numBottles, int numExchange) {
