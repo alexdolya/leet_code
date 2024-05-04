@@ -19,7 +19,6 @@ public class Solution {
         System.out.println(findDuplicates(ar3));
     }
 
-
     public static List<Integer> findDuplicates(int[] nums) {
         List<Integer> result = new ArrayList<>();
         Set<Integer> storage = new HashSet<>();
