@@ -2,7 +2,6 @@ package ru.dolya.utility;
 
 public class ListNodeUtils {
 
-
     public static ListNode createLinkedList(int[] values) {
         ListNode head = new ListNode(values[0]);
         ListNode current = head;
@@ -14,6 +13,5 @@ public class ListNodeUtils {
 
         return head;
     }
-
 
 }
