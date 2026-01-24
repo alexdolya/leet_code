@@ -7,6 +7,10 @@ public class Solution {
         char[] arr = new char[]{'a', 'a', 'b', 'b', 'c', 'c', 'c'};
         System.out.println(compress(arr));
         System.out.println(Arrays.toString(arr));
+
+        char[] arr1 = new char[]{'a', 'b', 'c'};
+        System.out.println(compress(arr1));
+        System.out.println(Arrays.toString(arr1));
     }
 
     public static int compress(char[] chars) {
@@ -14,38 +18,31 @@ public class Solution {
             return 1;
         }
 
-        int letterIndex = 0;
-        int letterCountIndex = 1;
-        int currentIndex = 1;
+        StringBuilder sb = new StringBuilder();
 
-        int counter = 1;
-        while (currentIndex < chars.length) {
-            if (chars[currentIndex] == chars[letterIndex]) {
-                counter++;
+        int currentCounter = 1;
+        char currentChar = chars[0];
+        for (int i = 1; i < chars.length; i++) {
+            if (chars[i] == currentChar) {
+                currentCounter++;
             } else {
-                if (counter != 1) {
-                    char[] charArray = String.valueOf(counter).toCharArray();
-                    for (char c : charArray) {
-                        chars[letterCountIndex] = c;
-                        letterCountIndex++;
-                    }
-                    letterIndex = letterIndex + counter + charArray.length - 1;
-                    letterCountIndex = letterIndex + 1;
-                } else {
-                    letterIndex++;
-                    letterCountIndex++;
+                sb.append(currentChar);
+                if (currentCounter > 1) {
+                    sb.append(currentCounter);
                 }
-                counter = 1;
+                currentCounter = 1;
+                currentChar = chars[i];
             }
-            currentIndex++;
-            if (currentIndex == chars.length && counter != 1) {
-                char[] charArray = String.valueOf(counter).toCharArray();
-                for (char c : charArray) {
-                    chars[letterCountIndex] = c;
-                    letterCountIndex++;
+            if (i == chars.length - 1) {
+                sb.append(currentChar);
+                if (currentCounter > 1) {
+                    sb.append(currentCounter);
                 }
             }
         }
-        return letterCountIndex;
+
+        char[] charArray = sb.toString().toCharArray();
+        System.arraycopy(charArray, 0, chars, 0, charArray.length);
+        return charArray.length;
     }
 }
